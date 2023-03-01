@@ -1,0 +1,14 @@
+//Check Palindrome using built-in Functions
+let word = "hello";
+
+let Array = word.split("");
+let newArray = Array.reverse();
+let newWord = newArray.join("");
+
+if (word == newWord) {
+    console.log(`${word} is palindrome`);
+}else {
+    console.log(`${word} is not palindrome`);
+}
+
+

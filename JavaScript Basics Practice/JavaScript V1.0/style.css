@@ -1,0 +1,147 @@
+@Import Url('Https://Fonts.Googleapis.Com/Css?Family=Montserrat:400,600,700');
+@Import Url('Https://Fonts.Googleapis.Com/Css?Family=Catamaran:400,800');
+.error-container {
+    text-align: center;
+    font-size:180px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    margin: 20px 15px;
+}
+.error-container > span {
+    display: inline-block;
+    position: relative;
+}
+.error-container > span:nth-last-of-type(1) {
+    perspective: 1000px;
+    perspective-origin: 500% 50%;
+    color:#F0E395;
+}
+.error-container > span:nth-of-type(1)>span {
+    transform-origin: 50% 100% 0px;
+    transform: rotateX(0);
+    animation: easyoutelastic 8s infinite;
+}
+.error-container>Span:nth-Of-Type(3) {
+    perspective: None;
+    Perspective-Origin: 50% 50%;
+    Color: #D15C95;
+}
+.error-container>Span:nth-Of-Type(3)>Span {
+    Transform-Origin: 100% 100% 0px;
+    Transform: Rotate(0deg);
+    Animation: rotatedrop 8s Infinite;
+}
+@keyframes easyoutelastic {
+    0% {
+        Transform: RotateX(0);
+    }
+
+    9% {
+        Transform: RotateX(210deg);
+    }
+
+    13% {
+        Transform: RotateX(150deg);
+    }
+
+    16% {
+        Transform: RotateX(200deg);
+    }
+
+    18% {
+        Transform: RotateX(170deg);
+    }
+
+    20% {
+        Transform: RotateX(180deg);
+    }
+
+    60% {
+        Transform: RotateX(180deg);
+    }
+
+    80% {
+        Transform: RotateX(0);
+    }
+
+    100% {
+        Transform: RotateX(0);
+    }
+}
+
+@keyframes rotatedrop {
+    0% {
+        Transform: Rotate(0);
+    }
+
+    10% {
+        Transform: Rotate(30deg);
+    }
+
+    15% {
+        Transform: Rotate(90deg);
+    }
+
+    70% {
+        Transform: Rotate(90deg);
+    }
+
+    80% {
+        Transform: Rotate(0);
+    }
+
+    100% {
+        Transform: RotateX(0);
+    }
+}
+* {
+    -Webkit-Box-Sizing: Border-Box;
+    -Moz-Box-Sizing: Border-Box;
+    Box-Sizing: Border-Box;
+}
+
+Body {
+    Background-Color: #F4f4f4;
+    Margin-Bottom: 50px;
+}
+
+Html,
+Button,
+Input,
+Select,
+Textarea {
+    Font-Family: 'Montserrat', Helvetica, Sans-Serif;
+    Color: #Bbb;
+}
+
+h1 {
+    Text-Align: Center;
+    Margin: 30px 15px;
+}
+
+.zoom-area {
+    Max-Width: 490px;
+    Margin: 30px Auto 30px;
+    Font-Size: 19px;
+    Text-Align: Center;
+}
+
+.link-container {
+    Text-Align: Center;
+}
+
+A.more-link {
+    Text-Transform: Uppercase;
+    Font-Size: 13px;
+    Background-Color: #Bbb;
+    Padding: 10px 15px;
+    Border-Radius: 0;
+    Color: #Fff;
+    Display: Inline-Block;
+    Margin-Right: 5px;
+    Margin-Bottom: 5px;
+    Line-Height: 1.5;
+    Text-Decoration: None;
+    Margin-Top: 50px;
+    Letter-Spacing: 1px;
+}
